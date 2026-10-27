@@ -1,0 +1,120 @@
+Rank,Feature,Importance
+1,numerical__Total Deaths,0.17950448840035715
+2,numerical__No. Affected,0.15685011039936747
+3,numerical__Total Damage ('000 US$),0.0854372310161012
+4,numerical__No. Injured,0.08043705647697166
+5,numerical__Start Day,0.04572485388039768
+6,numerical__End Day,0.045450046154717774
+7,numerical__End Year,0.03997966879088694
+8,numerical__Start Year,0.03945941042210597
+9,numerical__CPI,0.038892329794685924
+10,numerical__End Month,0.03668425728235143
+11,numerical__Start Month,0.036514734815928325
+12,categorical__ISO_CHN,0.008499332968309842
+13,categorical__Subregion_Southern Asia,0.008369775249729823
+14,categorical__Subregion_South-eastern Asia,0.008337558522277482
+15,categorical__Subregion_Eastern Asia,0.006956739301284391
+16,categorical__ISO_IND,0.006694321617953987
+17,categorical__Disaster Subtype_Riverine flood,0.005529283132795259
+18,categorical__Disaster Type_Flood,0.005376970842225069
+19,categorical__Disaster Subtype_Flash flood,0.00534156915007165
+20,categorical__Magnitude Scale_Km2,0.005334594440786457
+21,categorical__Disaster Subgroup_Hydrological,0.005174293232348869
+22,categorical__Disaster Subtype_Tropical cyclone,0.0050685948458145495
+23,categorical__ISO_IDN,0.005066724920126677
+24,categorical__ISO_PHL,0.005064232035286023
+25,categorical__Disaster Subtype_Flood (General),0.004752385247551665
+26,categorical__Subregion_Western Asia,0.004145635544006436
+27,categorical__Disaster Subgroup_Meteorological,0.004134152918074673
+28,categorical__ISO_JPN,0.004095135744765739
+29,categorical__Magnitude Scale_Kph,0.0040781411546394
+30,categorical__Disaster Type_Storm,0.003935567688856253
+31,categorical__ISO_BGD,0.0038161105824352946
+32,categorical__Disaster Type_Mass movement (wet),0.003788651822170039
+33,categorical__ISO_VNM,0.0036931053920857284
+34,categorical__Magnitude Scale_Moment Magnitude,0.0034153302918933006
+35,categorical__ISO_AFG,0.0032780191436058465
+36,categorical__Disaster Subgroup_Geophysical,0.0032756597370286215
+37,categorical__ISO_TWN,0.003265874481597065
+38,categorical__Disaster Subtype_Landslide (wet),0.0031821467952129756
+39,categorical__Disaster Subtype_Ground movement,0.0030604992656931037
+40,categorical__Subregion_Central Asia,0.002961457531376234
+41,categorical__Disaster Type_Earthquake,0.0028894852503715683
+42,categorical__ISO_PAK,0.002845527143853335
+43,categorical__ISO_THA,0.0028153553987359213
+44,categorical__Disaster Subtype_Storm (General),0.002619546890556049
+45,categorical__ISO_IRN,0.0025715470420162585
+46,categorical__Disaster Subtype_Severe weather,0.002439369343425274
+47,categorical__ISO_LKA,0.00232720260038006
+48,categorical__ISO_NPL,0.002315299652450704
+49,categorical__Disaster Type_Epidemic,0.002291952569854392
+50,categorical__Disaster Subgroup_Biological,0.002136728355403982
+51,categorical__ISO_KOR,0.00210624509679145
+52,categorical__ISO_TUR,0.0020005631060332606
+53,categorical__Magnitude Scale_°C,0.0019721754405327236
+54,categorical__Disaster Type_Extreme temperature,0.0019401123497843373
+55,categorical__Disaster Subtype_Lightning/Thunderstorms,0.0018594238548731716
+56,categorical__ISO_YEM,0.0018100355167961972
+57,categorical__Disaster Subgroup_Climatological,0.0017973083903907343
+58,categorical__ISO_MYS,0.0017799615440383168
+59,categorical__Disaster Subtype_Blizzard/Winter storm,0.0016857390661044265
+60,categorical__Disaster Subtype_Viral disease,0.001668480609418338
+61,categorical__ISO_TJK,0.0016480523774854993
+62,categorical__ISO_MMR,0.0016473103330918858
+63,categorical__Magnitude Scale_Vaccinated,0.0016242452722733851
+64,categorical__Disaster Subtype_Drought,0.0016098617920761314
+65,categorical__Disaster Subtype_Heat wave,0.001552424191376608
+66,categorical__Disaster Type_Drought,0.0013341957348328944
+67,categorical__Disaster Subtype_Tornado,0.0012325811340241377
+68,categorical__ISO_PRK,0.0011782286884401013
+69,categorical__ISO_LAO,0.0011621773098611477
+70,categorical__Disaster Subtype_Bacterial disease,0.0011024768586305896
+71,categorical__ISO_MNG,0.0008310547573638995
+72,categorical__Disaster Subtype_Avalanche (wet),0.0008298163433570219
+73,categorical__ISO_KHM,0.0008063610543120177
+74,categorical__Disaster Subtype_Hail,0.0007814640962800028
+75,categorical__Disaster Type_Volcanic activity,0.0007638073091663637
+76,categorical__ISO_HKG,0.0007155037618443296
+77,categorical__ISO_SAU,0.0007059575491651419
+78,categorical__ISO_IRQ,0.0006866151490413072
+79,categorical__Disaster Subtype_Cold wave,0.0006368360880323883
+80,categorical__Disaster Type_Wildfire,0.0006242304216549893
+81,categorical__ISO_SYR,0.0005695797793839333
+82,categorical__Disaster Subtype_Coastal flood,0.0005477408647093391
+83,categorical__Disaster Subtype_Ash fall,0.0005209145985780144
+84,categorical__ISO_KGZ,0.0005013084106088102
+85,categorical__ISO_OMN,0.0005004281556386672
+86,categorical__Disaster Subtype_Infectious disease (General),0.0004893281291807495
+87,categorical__ISO_PSE,0.00047557132142223745
+88,categorical__ISO_AZE,0.0004406655881733339
+89,categorical__ISO_KAZ,0.00043335265623569845
+90,categorical__ISO_ISR,0.0003857271174007506
+91,categorical__Disaster Subtype_Forest fire,0.00036116289825006005
+92,categorical__Disaster Subtype_Severe winter conditions,0.0003249253533685841
+93,categorical__ISO_TLS,0.0003214752409083663
+94,categorical__Disaster Subtype_Tsunami,0.00032030722826893233
+95,categorical__Disaster Subtype_Sand/Dust storm,0.00030534272201322504
+96,categorical__Disaster Subtype_Mudslide,0.000300943530858732
+97,categorical__ISO_ARM,0.0002643236512248377
+98,categorical__ISO_LBN,0.000239765481959651
+99,categorical__Disaster Subtype_Wildfire (General),0.00022655653789021627
+100,categorical__ISO_GEO,0.0002226580581587404
+101,categorical__ISO_JOR,0.00021596518750730673
+102,categorical__Disaster Subtype_Glacial lake outburst flood,0.00020061600128532436
+103,categorical__Disaster Type_Mass movement (dry),0.000186302990659965
+104,"categorical__Disaster Subtype_Land fire (Brush, Bush, Pasture)",0.00015291304715968104
+105,categorical__Disaster Type_Glacial lake outburst flood,0.00015092109234529977
+106,categorical__Disaster Subtype_Parasitic disease,0.00014537897573389233
+107,categorical__Disaster Subtype_Storm surge,0.00014318444076021167
+108,categorical__Disaster Subtype_Landslide (dry),0.00014254821997925046
+109,categorical__Disaster Subtype_Lava flow,0.00013672507816086307
+110,categorical__ISO_UZB,0.0001335384095978735
+111,categorical__Disaster Subtype_Rockfall (wet),0.0001293045885036346
+112,categorical__ISO_BTN,0.00012757201856957394
+113,categorical__Disaster Subtype_Volcanic activity (General),0.00011029504404177798
+114,categorical__ISO_QAT,9.729089739971058e-05
+115,categorical__Disaster Subtype_Pyroclastic flow,7.845695806084609e-05
+116,categorical__ISO_CYP,7.712680439723133e-05
+117,categorical__ISO_MDV,2.4401980071505122e-05
+118,categorical__Disaster Subtype_Extra-tropical storm,1.3410837869152594e-05
+119,categorical__ISO_SGP,1.0659625669647889e-05

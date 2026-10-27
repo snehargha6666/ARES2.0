@@ -1,0 +1,120 @@
+Feature
+numerical__Start Year
+numerical__Start Month
+numerical__Start Day
+numerical__End Year
+numerical__End Month
+numerical__End Day
+numerical__CPI
+numerical__Total Deaths
+numerical__No. Affected
+numerical__No. Injured
+numerical__Total Damage ('000 US$)
+categorical__Disaster Subgroup_Biological
+categorical__Disaster Subgroup_Climatological
+categorical__Disaster Subgroup_Geophysical
+categorical__Disaster Subgroup_Hydrological
+categorical__Disaster Subgroup_Meteorological
+categorical__Disaster Type_Drought
+categorical__Disaster Type_Earthquake
+categorical__Disaster Type_Epidemic
+categorical__Disaster Type_Extreme temperature
+categorical__Disaster Type_Flood
+categorical__Disaster Type_Glacial lake outburst flood
+categorical__Disaster Type_Mass movement (dry)
+categorical__Disaster Type_Mass movement (wet)
+categorical__Disaster Type_Storm
+categorical__Disaster Type_Volcanic activity
+categorical__Disaster Type_Wildfire
+categorical__Disaster Subtype_Ash fall
+categorical__Disaster Subtype_Avalanche (wet)
+categorical__Disaster Subtype_Bacterial disease
+categorical__Disaster Subtype_Blizzard/Winter storm
+categorical__Disaster Subtype_Coastal flood
+categorical__Disaster Subtype_Cold wave
+categorical__Disaster Subtype_Drought
+categorical__Disaster Subtype_Extra-tropical storm
+categorical__Disaster Subtype_Flash flood
+categorical__Disaster Subtype_Flood (General)
+categorical__Disaster Subtype_Forest fire
+categorical__Disaster Subtype_Glacial lake outburst flood
+categorical__Disaster Subtype_Ground movement
+categorical__Disaster Subtype_Hail
+categorical__Disaster Subtype_Heat wave
+categorical__Disaster Subtype_Infectious disease (General)
+"categorical__Disaster Subtype_Land fire (Brush, Bush, Pasture)"
+categorical__Disaster Subtype_Landslide (dry)
+categorical__Disaster Subtype_Landslide (wet)
+categorical__Disaster Subtype_Lava flow
+categorical__Disaster Subtype_Lightning/Thunderstorms
+categorical__Disaster Subtype_Mudslide
+categorical__Disaster Subtype_Parasitic disease
+categorical__Disaster Subtype_Pyroclastic flow
+categorical__Disaster Subtype_Riverine flood
+categorical__Disaster Subtype_Rockfall (wet)
+categorical__Disaster Subtype_Sand/Dust storm
+categorical__Disaster Subtype_Severe weather
+categorical__Disaster Subtype_Severe winter conditions
+categorical__Disaster Subtype_Storm (General)
+categorical__Disaster Subtype_Storm surge
+categorical__Disaster Subtype_Tornado
+categorical__Disaster Subtype_Tropical cyclone
+categorical__Disaster Subtype_Tsunami
+categorical__Disaster Subtype_Viral disease
+categorical__Disaster Subtype_Volcanic activity (General)
+categorical__Disaster Subtype_Wildfire (General)
+categorical__ISO_AFG
+categorical__ISO_ARM
+categorical__ISO_AZE
+categorical__ISO_BGD
+categorical__ISO_BTN
+categorical__ISO_CHN
+categorical__ISO_CYP
+categorical__ISO_GEO
+categorical__ISO_HKG
+categorical__ISO_IDN
+categorical__ISO_IND
+categorical__ISO_IRN
+categorical__ISO_IRQ
+categorical__ISO_ISR
+categorical__ISO_JOR
+categorical__ISO_JPN
+categorical__ISO_KAZ
+categorical__ISO_KGZ
+categorical__ISO_KHM
+categorical__ISO_KOR
+categorical__ISO_LAO
+categorical__ISO_LBN
+categorical__ISO_LKA
+categorical__ISO_MDV
+categorical__ISO_MMR
+categorical__ISO_MNG
+categorical__ISO_MYS
+categorical__ISO_NPL
+categorical__ISO_OMN
+categorical__ISO_PAK
+categorical__ISO_PHL
+categorical__ISO_PRK
+categorical__ISO_PSE
+categorical__ISO_QAT
+categorical__ISO_SAU
+categorical__ISO_SGP
+categorical__ISO_SYR
+categorical__ISO_THA
+categorical__ISO_TJK
+categorical__ISO_TLS
+categorical__ISO_TUR
+categorical__ISO_TWN
+categorical__ISO_UZB
+categorical__ISO_VNM
+categorical__ISO_YEM
+categorical__Subregion_Central Asia
+categorical__Subregion_Eastern Asia
+categorical__Subregion_South-eastern Asia
+categorical__Subregion_Southern Asia
+categorical__Subregion_Western Asia
+categorical__Magnitude Scale_Km2
+categorical__Magnitude Scale_Kph
+categorical__Magnitude Scale_Moment Magnitude
+categorical__Magnitude Scale_Vaccinated
+categorical__Magnitude Scale_°C
