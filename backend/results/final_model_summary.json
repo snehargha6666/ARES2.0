@@ -1,0 +1,17 @@
+{
+    "model": "MLP",
+    "input_features": 119,
+    "output_classes": 4,
+    "optimizer": "RMSprop",
+    "learning_rate": 0.001,
+    "l2_regularization": 0.001,
+    "dropout": 0.3,
+    "batch_size": 32,
+    "maximum_epochs": 100,
+    "epochs_completed": 43,
+    "best_epoch": 31,
+    "best_validation_loss": 1.1503009796142578,
+    "best_validation_accuracy": 0.4740259647369385,
+    "test_loss": 1.1377979516983032,
+    "test_accuracy": 0.48917749524116516
+}

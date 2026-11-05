@@ -1,0 +1,812 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ARES 2.0 | Disaster Severity Prediction</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- =====================================================
+             HEADER
+        ====================================================== -->
+
+        <header class="header">
+
+            <div>
+                <h1>ARES 2.0</h1>
+
+                <p>
+                    Autonomous Rescue & Emergency Swarm
+                </p>
+            </div>
+
+            <div
+                id="apiStatus"
+                class="status offline"
+            >
+                API Offline
+            </div>
+
+        </header>
+
+
+        <!-- =====================================================
+             MAIN
+        ====================================================== -->
+
+        <main>
+
+            <!-- HERO -->
+
+            <section class="hero">
+
+                <h2>
+                    Disaster Severity Prediction
+                </h2>
+
+                <p>
+                    Enter disaster information to estimate the severity
+                    using the ARES machine learning model.
+                </p>
+
+            </section>
+
+
+            <!-- =================================================
+                 DISASTER INFORMATION
+            ================================================== -->
+
+            <section class="card">
+
+                <h3>
+                    Disaster Information
+                </h3>
+
+
+                <div class="form-grid">
+
+
+                    <!-- Disaster Subgroup -->
+
+                    <div class="form-group">
+
+                        <label for="subgroup">
+                            Disaster Subgroup
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subgroup"
+                            value="Hydrological"
+                        >
+
+                    </div>
+
+
+                    <!-- Disaster Type -->
+
+                    <div class="form-group">
+
+                        <label for="type">
+                            Disaster Type
+                        </label>
+
+                        <select id="type">
+
+                            <option value="Flood">
+                                Flood
+                            </option>
+
+                            <option value="Storm">
+                                Storm
+                            </option>
+
+                            <option value="Earthquake">
+                                Earthquake
+                            </option>
+
+                            <option value="Drought">
+                                Drought
+                            </option>
+
+                            <option value="Extreme temperature">
+                                Extreme Temperature
+                            </option>
+
+                            <option value="Wildfire">
+                                Wildfire
+                            </option>
+
+                            <option value="Landslide">
+                                Landslide
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Disaster Subtype -->
+
+                    <div class="form-group">
+
+                        <label for="subtype">
+                            Disaster Subtype
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subtype"
+                            value="Riverine flood"
+                        >
+
+                    </div>
+
+
+                    <!-- Country / ISO -->
+
+                    <div class="form-group">
+
+                        <label for="iso">
+                            Country / ISO
+                        </label>
+
+                        <select id="iso">
+
+                            <option value="IND">
+                                India (IND)
+                            </option>
+
+                            <option value="CHN">
+                                China (CHN)
+                            </option>
+
+                            <option value="IDN">
+                                Indonesia (IDN)
+                            </option>
+
+                            <option value="PHL">
+                                Philippines (PHL)
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Subregion -->
+
+                    <div class="form-group">
+
+                        <label for="subregion">
+                            Subregion
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subregion"
+                            value="Southern Asia"
+                        >
+
+                    </div>
+
+
+                    <!-- Magnitude Scale -->
+
+                    <div class="form-group">
+
+                        <label for="magnitude">
+                            Magnitude Scale
+                        </label>
+
+                        <input
+                            type="text"
+                            id="magnitude"
+                            value="Km2"
+                        >
+
+                    </div>
+
+
+                    <!-- Start Year -->
+
+                    <div class="form-group">
+
+                        <label for="startYear">
+                            Start Year
+                        </label>
+
+                        <input
+                            type="number"
+                            id="startYear"
+                            value="2024"
+                        >
+
+                    </div>
+
+
+                    <!-- Start Month -->
+
+                    <div class="form-group">
+
+                        <label for="startMonth">
+                            Start Month
+                        </label>
+
+                        <input
+                            type="number"
+                            id="startMonth"
+                            min="1"
+                            max="12"
+                            value="7"
+                        >
+
+                    </div>
+
+
+                    <!-- Start Day -->
+
+                    <div class="form-group">
+
+                        <label for="startDay">
+                            Start Day
+                        </label>
+
+                        <input
+                            type="number"
+                            id="startDay"
+                            min="1"
+                            max="31"
+                            value="10"
+                        >
+
+                    </div>
+
+
+                    <!-- End Year -->
+
+                    <div class="form-group">
+
+                        <label for="endYear">
+                            End Year
+                        </label>
+
+                        <input
+                            type="number"
+                            id="endYear"
+                            value="2024"
+                        >
+
+                    </div>
+
+
+                    <!-- End Month -->
+
+                    <div class="form-group">
+
+                        <label for="endMonth">
+                            End Month
+                        </label>
+
+                        <input
+                            type="number"
+                            id="endMonth"
+                            min="1"
+                            max="12"
+                            value="7"
+                        >
+
+                    </div>
+
+
+                    <!-- End Day -->
+
+                    <div class="form-group">
+
+                        <label for="endDay">
+                            End Day
+                        </label>
+
+                        <input
+                            type="number"
+                            id="endDay"
+                            min="1"
+                            max="31"
+                            value="15"
+                        >
+
+                    </div>
+
+
+                    <!-- CPI -->
+
+                    <div class="form-group">
+
+                        <label for="cpi">
+                            CPI
+                        </label>
+
+                        <input
+                            type="number"
+                            id="cpi"
+                            value="120"
+                        >
+
+                    </div>
+
+
+                    <!-- Total Deaths -->
+
+                    <div class="form-group">
+
+                        <label for="deaths">
+                            Total Deaths
+                        </label>
+
+                        <input
+                            type="number"
+                            id="deaths"
+                            min="0"
+                            value="20"
+                        >
+
+                    </div>
+
+
+                    <!-- No. Affected -->
+
+                    <div class="form-group">
+
+                        <label for="affected">
+                            No. Affected
+                        </label>
+
+                        <input
+                            type="number"
+                            id="affected"
+                            min="0"
+                            value="5000"
+                        >
+
+                    </div>
+
+
+                    <!-- No. Injured -->
+
+                    <div class="form-group">
+
+                        <label for="injured">
+                            No. Injured
+                        </label>
+
+                        <input
+                            type="number"
+                            id="injured"
+                            min="0"
+                            value="100"
+                        >
+
+                    </div>
+
+
+                    <!-- Total Damage -->
+
+                    <div class="form-group">
+
+                        <label for="damage">
+                            Total Damage ('000 US$)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="damage"
+                            min="0"
+                            value="50000"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     PREDICT BUTTON
+                ================================================== -->
+
+                <button
+                    id="predictButton"
+                    type="button"
+                    onclick="predictSeverity()"
+                >
+                    Predict Severity
+                </button>
+
+            </section>
+
+
+            <!-- =================================================
+                 LOADING
+            ================================================== -->
+
+            <div
+                id="loading"
+                class="loading hidden"
+            >
+                Running ARES prediction...
+            </div>
+
+
+            <!-- =================================================
+                 RESULT
+            ================================================== -->
+
+            <section
+                id="resultCard"
+                class="card result hidden"
+            >
+
+                <h3>
+                    Prediction Result
+                </h3>
+
+
+                <div class="severity-container">
+
+                    <div
+                        id="severity"
+                        class="severity"
+                    >
+                        —
+                    </div>
+
+
+                    <div class="confidence">
+
+                        Confidence
+
+                        <strong id="confidence">
+                            0%
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <h4>
+                    Class Probabilities
+                </h4>
+
+
+                <!-- LOW -->
+
+                <div class="probability">
+
+                    <div class="probability-label">
+
+                        <span>
+                            Low
+                        </span>
+
+                        <span id="lowValue">
+                            0%
+                        </span>
+
+                    </div>
+
+                    <div class="bar">
+
+                        <div
+                            id="lowBar"
+                            class="bar-fill"
+                            style="width: 0%"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MODERATE -->
+
+                <div class="probability">
+
+                    <div class="probability-label">
+
+                        <span>
+                            Moderate
+                        </span>
+
+                        <span id="moderateValue">
+                            0%
+                        </span>
+
+                    </div>
+
+                    <div class="bar">
+
+                        <div
+                            id="moderateBar"
+                            class="bar-fill"
+                            style="width: 0%"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HIGH -->
+
+                <div class="probability">
+
+                    <div class="probability-label">
+
+                        <span>
+                            High
+                        </span>
+
+                        <span id="highValue">
+                            0%
+                        </span>
+
+                    </div>
+
+                    <div class="bar">
+
+                        <div
+                            id="highBar"
+                            class="bar-fill"
+                            style="width: 0%"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CRITICAL -->
+
+                <div class="probability">
+
+                    <div class="probability-label">
+
+                        <span>
+                            Critical
+                        </span>
+
+                        <span id="criticalValue">
+                            0%
+                        </span>
+
+                    </div>
+
+                    <div class="bar">
+
+                        <div
+                            id="criticalBar"
+                            class="bar-fill"
+                            style="width: 0%"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 ERROR
+            ================================================== -->
+
+            <div
+                id="error"
+                class="error hidden"
+            ></div>
+
+            <section class="card">
+
+                <h3>
+                    Module 3: Disaster Image Analysis
+                </h3>
+
+                <p class="module-description">
+                    Upload an image to run the existing CNN, YOLO, and U-Net vision pipeline.
+                </p>
+
+                <div class="vision-upload">
+                    <input
+                        type="file"
+                        id="visionImage"
+                        accept="image/*"
+                    >
+
+                    <button
+                        id="visionButton"
+                        type="button"
+                        onclick="analyzeVisionImage()"
+                    >
+                        Analyze Disaster Image
+                    </button>
+                </div>
+
+                <div
+                    id="visionLoading"
+                    class="loading hidden"
+                >
+                    Running Module 3 vision analysis...
+                </div>
+
+                <div
+                    id="visionError"
+                    class="error hidden"
+                ></div>
+
+                <div
+                    id="visionResult"
+                    class="vision-result hidden"
+                >
+                    <div class="vision-images">
+                        <div>
+                            <h4>Uploaded Image</h4>
+                            <img id="visionPreview" alt="Uploaded disaster preview">
+                        </div>
+
+                        <div>
+                            <h4>U-Net Segmentation Mask</h4>
+                            <img id="visionMask" alt="Generated segmentation mask">
+                        </div>
+
+                        <div>
+                            <h4>YOLO Detection Overlay</h4>
+                            <img id="visionDetectionsImage" alt="YOLO detection overlay">
+                        </div>
+                    </div>
+
+                    <div class="vision-summary">
+                        <p>
+                            CNN severity:
+                            <strong id="visionSeverity">—</strong>
+                        </p>
+                        <p>
+                            Confidence:
+                            <strong id="visionConfidence">—</strong>
+                        </p>
+                        <p id="visionSeverityWarning" class="module-description"></p>
+                    </div>
+
+                    <h4>YOLO Detected Objects</h4>
+                    <p id="visionDetectionModel" class="module-description"></p>
+                    <p id="visionSegmentationMethod" class="module-description"></p>
+                    <ul id="visionDetections" class="vision-detections"></ul>
+                </div>
+
+            </section>
+
+            <section class="card module5-card">
+                <h3>Module 5: Synthetic Data &amp; AI Report Generation</h3>
+                <p class="module-description">
+                    Use the trained GAN to generate synthetic disaster records, review discriminator performance,
+                    and generate the AI disaster response report.
+                </p>
+
+                <div class="module5-actions">
+                    <button id="generateSyntheticButton" type="button" onclick="generateSyntheticData()">
+                        Generate Synthetic Data
+                    </button>
+                    <button id="generateReportButton" type="button" onclick="generateAIReport()">
+                        Generate AI Report
+                    </button>
+                </div>
+
+                <div id="module5Loading" class="loading hidden">Running Module 5...</div>
+                <div id="module5Error" class="error hidden"></div>
+
+                <div id="module5Result" class="hidden">
+                    <div class="module5-stat-grid">
+                        <div class="module5-stat"><span>Synthetic records</span><strong id="syntheticCount">—</strong></div>
+                        <div class="module5-stat"><span>Generated features</span><strong id="featureCount">—</strong></div>
+                        <div class="module5-stat"><span>GAN accuracy</span><strong id="ganAccuracy">—</strong></div>
+                        <div class="module5-stat"><span>ROC AUC</span><strong id="ganAuc">—</strong></div>
+                    </div>
+
+                    <h4>Generated Data Preview</h4>
+                    <div class="table-wrap">
+                        <table id="syntheticPreview">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+
+                    <div class="module5-charts">
+                        <figure><img id="ganPerformance" alt="GAN performance chart"><figcaption>Discriminator performance</figcaption></figure>
+                        <figure><img id="ganRocCurve" alt="GAN ROC curve"><figcaption>ROC curve</figcaption></figure>
+                        <figure><img id="ganConfusionMatrix" alt="GAN confusion matrix"><figcaption>Confusion matrix</figcaption></figure>
+                    </div>
+                </div>
+
+                <div id="reportResult" class="report-result hidden">
+                    <h4>AI Disaster Report</h4>
+                    <pre id="aiReport"></pre>
+                </div>
+            </section>
+
+            <section class="card module4-card">
+                <h3>Module 4: Disaster Forecasting</h3>
+                <p class="module-description">
+                    Compare RNN, LSTM, GRU, and BiLSTM sequence models trained on the previous five
+                    chronological disaster events.
+                </p>
+
+                <div id="module4Loading" class="loading">Loading Module 4 forecasting results...</div>
+                <div id="module4Error" class="error hidden"></div>
+                <div id="module4Result" class="hidden">
+                    <div class="module5-stat-grid">
+                        <div class="module5-stat"><span>Best model</span><strong id="module4BestModel">—</strong></div>
+                        <div class="module5-stat"><span>Best accuracy</span><strong id="module4Accuracy">—</strong></div>
+                        <div class="module5-stat"><span>Forecast window</span><strong id="module4Window">—</strong></div>
+                        <div class="module5-stat"><span>Test samples</span><strong id="module4TestSamples">—</strong></div>
+                    </div>
+
+                    <h4>Model Comparison</h4>
+                    <div class="table-wrap">
+                        <table id="module4Models">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+
+                    <h4>BiLSTM Forecast Preview</h4>
+                    <div class="table-wrap">
+                        <table id="module4Predictions">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+
+                    <div class="module4-charts">
+                        <figure><img id="module4AccuracyChart" alt="Module 4 accuracy comparison"><figcaption>Accuracy comparison</figcaption></figure>
+                        <figure><img id="module4MetricsChart" alt="Module 4 metrics comparison"><figcaption>Precision, recall, and F1</figcaption></figure>
+                        <figure><img id="module4RocChart" alt="Module 4 ROC curve"><figcaption>ROC curve</figcaption></figure>
+                        <figure><img id="module4ConfusionChart" alt="Module 4 confusion matrices"><figcaption>Confusion matrices</figcaption></figure>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+        <!-- =====================================================
+             FOOTER
+        ====================================================== -->
+
+        <footer>
+
+            <p>
+                ARES 2.0 • AI-powered Disaster Response System
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

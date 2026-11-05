@@ -1,0 +1,48 @@
+Column,Data_Type,Missing_Count,Missing_Percentage,Unique_Values
+DisNo.,str,0,0.0,4221
+Historic,str,0,0.0,1
+Classification Key,str,0,0.0,42
+Disaster Group,str,0,0.0,1
+Disaster Subgroup,str,0,0.0,5
+Disaster Type,str,0,0.0,12
+Disaster Subtype,str,0,0.0,42
+External IDs,str,2557,60.57806207059938,1343
+Event Name,str,3288,77.89623312011372,525
+ISO,str,0,0.0,49
+Country,str,0,0.0,49
+Subregion,str,0,0.0,5
+Region,str,0,0.0,1
+Location,str,126,2.9850746268656714,3825
+Origin,str,2561,60.672826344468135,308
+Associated Types,str,2739,64.88983653162758,90
+OFDA/BHA Response,str,0,0.0,2
+Appeal,str,0,0.0,2
+Declaration,str,0,0.0,2
+AID Contribution ('000 US$),float64,3999,94.74058280028429,205
+Magnitude,float64,2633,62.37858327410566,803
+Magnitude Scale,str,416,9.855484482350153,5
+Latitude,float64,3266,77.3750296138356,871
+Longitude,float64,3266,77.3750296138356,860
+River Basin,str,3826,90.64202795546079,362
+Start Year,int64,0,0.0,27
+Start Month,float64,8,0.18952854773750297,12
+Start Day,float64,351,8.315565031982942,31
+End Year,int64,0,0.0,28
+End Month,float64,38,0.9002606017531392,12
+End Day,float64,345,8.173418621179815,31
+Total Deaths,float64,918,21.748400852878465,367
+No. Injured,float64,2590,61.359867330016584,445
+No. Affected,float64,1314,31.13006396588486,1679
+No. Homeless,float64,3682,87.23051409618574,314
+Total Affected,float64,620,14.68846244965648,2335
+Reconstruction Costs ('000 US$),float64,4213,99.81047145226249,7
+"Reconstruction Costs, Adjusted ('000 US$)",float64,4213,99.81047145226249,8
+Insured Damage ('000 US$),float64,4055,96.06728263444681,111
+"Insured Damage, Adjusted ('000 US$)",float64,4055,96.06728263444681,155
+Total Damage ('000 US$),float64,2705,64.08434020374318,770
+"Total Damage, Adjusted ('000 US$)",float64,2715,64.32125088841507,1330
+CPI,float64,46,1.089789149490642,26
+Admin Units,str,778,18.431651267472162,2790
+GADM Admin Units,str,1026,24.307036247334754,2588
+Entry Date,str,0,0.0,1551
+Last Update,str,0,0.0,202

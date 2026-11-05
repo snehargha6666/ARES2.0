@@ -1,0 +1,40 @@
+ARES 2.0 - MODEL TEST REPORT
+Disaster Severity Prediction
+============================================================
+
+Model: C:\Users\HP\OneDrive\Desktop\projects\ARES(2.0)\backend\models\ares_mlp.keras
+Test samples: 462
+Input features: 119
+Output classes: 4
+
+METRICS
+Accuracy: 0.4957
+Precision: 0.5157
+Recall: 0.4957
+F1 Score: 0.5006
+
+CLASSIFICATION REPORT
+              precision    recall  f1-score   support
+
+         Low       0.53      0.53      0.53       116
+    Moderate       0.36      0.30      0.33       115
+        High       0.37      0.50      0.42       115
+    Critical       0.80      0.65      0.71       116
+
+    accuracy                           0.50       462
+   macro avg       0.52      0.50      0.50       462
+weighted avg       0.52      0.50      0.50       462
+
+CONFUSION MATRIX
+[[62 29 25  0]
+ [36 35 42  2]
+ [15 26 57 17]
+ [ 4  6 31 75]]
+
+TESTS
+Model exists: True
+Input shape valid: True
+Target shape valid: True
+Prediction count valid: True
+Probability validation: True
+Class validation: True

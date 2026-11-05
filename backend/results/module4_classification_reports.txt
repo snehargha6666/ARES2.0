@@ -1,0 +1,57 @@
+ARES 2.0 - MODULE 4 CLASSIFICATION REPORTS
+
+MODEL: RNN
+
+              precision    recall  f1-score   support
+
+         Low       0.40      0.03      0.05       137
+    Moderate       0.27      0.71      0.39       119
+        High       0.19      0.06      0.09        86
+    Critical       0.28      0.25      0.26        89
+
+    accuracy                           0.27       431
+   macro avg       0.28      0.26      0.20       431
+weighted avg       0.30      0.27      0.20       431
+
+
+MODEL: LSTM
+
+              precision    recall  f1-score   support
+
+         Low       0.32      0.97      0.48       137
+    Moderate       0.14      0.01      0.02       119
+        High       0.00      0.00      0.00        86
+    Critical       0.00      0.00      0.00        89
+
+    accuracy                           0.31       431
+   macro avg       0.11      0.24      0.12       431
+weighted avg       0.14      0.31      0.16       431
+
+
+MODEL: GRU
+
+              precision    recall  f1-score   support
+
+         Low       0.67      0.01      0.03       137
+    Moderate       0.27      0.97      0.43       119
+        High       0.33      0.01      0.02        86
+    Critical       0.00      0.00      0.00        89
+
+    accuracy                           0.27       431
+   macro avg       0.32      0.25      0.12       431
+weighted avg       0.35      0.27      0.13       431
+
+
+MODEL: BiLSTM
+
+              precision    recall  f1-score   support
+
+         Low       0.35      0.52      0.42       137
+    Moderate       0.31      0.56      0.40       119
+        High       0.33      0.05      0.08        86
+    Critical       0.00      0.00      0.00        89
+
+    accuracy                           0.33       431
+   macro avg       0.25      0.28      0.23       431
+weighted avg       0.26      0.33      0.26       431
+

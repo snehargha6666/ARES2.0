@@ -1,0 +1,37 @@
+ARES 2.0 - MODULE 4 EVALUATION REPORT
+=======================================================
+
+Best Model: BiLSTM
+
+Accuracy: 0.3295
+Precision_Weighted: 0.2636
+Recall_Weighted: 0.3295
+F1_Weighted: 0.2598
+Precision_Macro: 0.2486
+Recall_Macro: 0.2819
+F1_Macro: 0.2251
+ROC_AUC: 0.5394
+Training_Time_Seconds: 46.3159
+
+
+BEST MODEL CLASSIFICATION REPORT
+
+              precision    recall  f1-score   support
+
+         Low       0.35      0.52      0.42       137
+    Moderate       0.31      0.56      0.40       119
+        High       0.33      0.05      0.08        86
+    Critical       0.00      0.00      0.00        89
+
+    accuracy                           0.33       431
+   macro avg       0.25      0.28      0.23       431
+weighted avg       0.26      0.33      0.26       431
+
+
+ALL MODEL COMPARISON RESULTS
+
+ Model  Accuracy  Precision_Weighted  Recall_Weighted  F1_Weighted  Precision_Macro  Recall_Macro  F1_Macro  ROC_AUC  Training_Time_Seconds  Epochs_Trained
+   RNN  0.266821            0.295932         0.266821     0.195755         0.283494      0.260102  0.197790 0.508741              11.441966              14
+  LSTM  0.310905            0.139623         0.310905     0.155639         0.114506      0.244802  0.122931 0.504022              23.596955              13
+   GRU  0.273782            0.353663         0.273782     0.130947         0.318128      0.248153  0.119045 0.503642              19.626784              13
+BiLSTM  0.329466            0.263585         0.329466     0.259759         0.248614      0.281946  0.225114 0.539386              46.315914              13
